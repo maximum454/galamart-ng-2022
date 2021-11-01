@@ -4,6 +4,7 @@
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
+		flex-wrap: wrap;
 	}
 	&__prev{
 		display: flex;
@@ -12,6 +13,7 @@
 	&__next{
 		display: flex;
 		align-items: center;
+		margin-left: auto;
 		.footer-nav__name{
 			&:before{
 				content: '';
