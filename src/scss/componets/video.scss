@@ -1,0 +1,60 @@
+.video {
+	margin-bottom: 60px;
+
+	&__title {
+		font-family: PT Sans;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 36px;
+		line-height: 47px;
+		text-align: center;
+		color: #FFFFFF;
+		position: relative;
+		margin-bottom: 15px;
+
+		a {
+			position: absolute;
+			right: 0;
+			top: 50%;
+			transform: translate(0, -50%);
+		}
+	}
+
+	&__img {
+		position: relative;
+		&:before{
+			content: '';
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%,-50%);
+			background-image: url("../img/naryadite-yelku-newyear2022/play_icon.png");
+			background-repeat: no-repeat;
+			background-size: 100%;
+			width: 80px;
+			height: 80px;
+		}
+	}
+
+	.swiper-slide {
+		background-color: #fff;
+		padding: 10px;
+		text-decoration: none;
+		img {
+			max-width: 100%;
+			height: auto;
+			object-fit: cover;
+		}
+		p{
+			font-size: 18px;
+			line-height: 23px;
+			color: #000;
+		}
+	}
+
+	.swiper-pagination {
+		position: relative;
+		bottom: 0;
+		display: none;
+	}
+}
