@@ -1,6 +1,7 @@
 
 
 $(function () {
+    //Показать еще
     $('.js-best-gift-more').on('click', function (){
         $(this).addClass('d-none');
         $('.best-gift__body').removeClass('d-none');

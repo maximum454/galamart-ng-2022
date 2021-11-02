@@ -45,7 +45,7 @@
   -webkit-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
-  margin: 0 50px;
+  margin: 0 10px;
   -ms-flex-negative: 0;
       flex-shrink: 0;
   text-align: center;
@@ -61,6 +61,10 @@
   font-size: 60px;
   line-height: 78px;
   top: -40px;
+}
+
+.tabs__caption li.active .tabs__icon {
+  opacity: 1;
 }
 
 .tabs__caption li.active .tabs__arrow-prev {
@@ -84,6 +88,10 @@
 
 .tabs__content {
   display: none;
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 40px;
+  position: relative;
 }
 
 .tabs__content.active {
@@ -91,6 +99,27 @@
 }
 
 .tabs__title {
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 47px;
+  text-align: center;
+  color: #2960A5;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.tabs__title a {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+      -ms-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+}
+
+.tabs__item {
   position: relative;
   text-decoration: none;
 }
@@ -150,6 +179,8 @@
 }
 
 .tabs__icon {
+  display: block;
+  text-decoration: none;
   opacity: 0.7;
 }
 
