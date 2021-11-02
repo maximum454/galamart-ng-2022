@@ -40,6 +40,29 @@ const swiperAction = new Swiper('.swiper-action', {
     }
 });
 
+const swiperGarland = new Swiper('.swiper-garland', {
+    slidesPerView: 2,
+    spaceBetween: 0,
+    pagination: {
+        el: '.swiper-pagination',
+    },
+    navigation: {
+        nextEl: '.swiper-garland-button-next',
+        prevEl: '.swiper-garland-button-prev',
+    },
+    breakpoints: {
+        320:{
+            slidesPerView: 2,
+        },
+        768: {
+            slidesPerView: 4,
+        },
+        1024: {
+            slidesPerView: 5,
+        },
+    }
+});
+
 const swiperVideo = new Swiper('.swiper-video', {
     loop: true,
     slidesPerView: 1,

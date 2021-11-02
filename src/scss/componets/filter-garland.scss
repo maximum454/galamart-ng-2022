@@ -1,0 +1,81 @@
+.filter-garland{
+	margin-bottom: 100px;
+	&__title {
+		font-family: PT Sans;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 36px;
+		line-height: 47px;
+		text-align: center;
+		color: #FFFFFF;
+		position: relative;
+		margin-bottom: 15px;
+		&--slider{
+			color: #2960A5;
+		}
+		a {
+			position: absolute;
+			right: 0;
+			top: 50%;
+			transform: translate(0, -50%);
+		}
+	}
+	&__body{
+
+	}
+	&__slider{
+		background-color: #fff;
+		border-radius: 20px;
+		padding: 40px  40px 20px;
+		position: relative;
+		&:before{
+			content: '';
+			position: absolute;
+			top: -30px;
+			left: 50%;
+			transform: translate(-50%,0);
+			background-image: url("../img/naryadite-yelku-newyear2022/block_arrow.svg");
+			background-size: 100%;
+			background-repeat: no-repeat;
+			width: 60px;
+			height: 30px;
+		}
+	}
+	.swiper-garland-button-prev,
+	.swiper-garland-button-next{
+		position: absolute;
+		top: calc(50% - 30px);
+		transform: translate(0,-50%);
+		background-repeat: no-repeat;
+		background-size: 100%;
+		background-position: center;
+		width: 50px;
+		height: 50px;
+		cursor: pointer;
+	}
+	.swiper-button-disabled{
+		opacity: .5;
+	}
+	.swiper-garland-button-prev{
+		left: -30px;
+		background-image: url("../img/content_block_arrow_left_inactive.svg");
+	}
+	.swiper-garland-button-next{
+		right: -30px;
+		background-image: url("../img/content_block_arrow_right_inactive.svg");
+	}
+	.swiper-pagination {
+		position: relative;
+		bottom: 0;
+		margin: 20px auto 0;
+	}
+	.swiper-pagination-bullet{
+		background-color: #FD7400;
+		vertical-align: middle;
+	}
+	.swiper-pagination-bullet-active{
+		background-color: #FD7400;
+		width: 10px;
+		height: 10px;
+	}
+}

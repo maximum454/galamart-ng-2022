@@ -1,11 +1,6 @@
 @import "mixin";
 @import "fonts";
-@import "icon";
-@import "buttons";
-@import "form";
-@import "table";
 @import "tabs";
-@import "alert";
 
 * {
 	box-sizing: border-box;
@@ -131,6 +126,7 @@ p {
 
 @import "componets/header-banner";
 @import "componets/decorations-elka";
+@import "componets/filter-garland";
 @import "componets/action-banners";
 @import "componets/slider-collection";
 @import "componets/video";
