@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+    @@include('./template/_meta.html')
+    <title>Выбирете подарки</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+          integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <!-- CSS -->
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="css/galamart-ng-2022.css">
+</head>
+
+<body>
+<div class="wrp">
+    <div class="header-banner">
+        <div class="header-banner__logo">
+            <img src="./img/text_main_banner.svg" width="614" height="382" alt="">
+        </div>
+        <a href="" class="header-banner__btn">
+            <img src="./img/btn_main_banner-min.png" width="440" height="186" alt="">
+        </a>
+    </div>
+
+    <div class="tabs">
+        <ul class="tabs__caption">
+            <li class="active">
+                <div class="tabs__title">
+                    <a class="tabs__name" href="tab-1">Нарядить ёлку <span>01</span></a>
+                    <a class="tabs__arrow-next" href="#next"></a>
+                </div>
+                <div class="tabs__icon icon1">
+                    <img src="./img/step1_active.png" width="350" height="350" alt="">
+                </div>
+            </li>
+            <li>
+                <div class="tabs__title">
+                    <a class="tabs__arrow-prev" href="#prev"></a>
+                    <a class="tabs__name" href="tab-2">Выбрать подарки <span>02</span></a>
+                    <a class="tabs__arrow-next" href="#next"></a>
+                </div>
+                <div class="tabs__icon icon1">
+                    <img src="./img/step2_bottom.png" alt="">
+                </div>
+            </li>
+            <li>
+                <div class="tabs__title">
+
+                    <a class="tabs__name" href="tab-3">Накрыть на стол <span>03</span></a>
+
+                </div>
+                <div class="tabs__icon icon1">
+                    <img src="./img/step3_bottom.png" alt="">
+                </div>
+            </li>
+            <li>
+                <div class="tabs__title">
+                    <a class="tabs__arrow-prev" href="#prev"></a>
+                    <a class="tabs__name" href="tab-4">Украсить дом <span>04</span></a>
+                    <a class="tabs__arrow-next" href="#next"></a>
+                </div>
+                <div class="tabs__icon icon1">
+                    <img src="./img/step4_bottom.png" alt="">
+                </div>
+            </li>
+        </ul>
+        <!-- Контент -->
+        <div class="tabs-items">
+            <div class="tabs-item" id="tab-1">
+                <strong>Текст вкладки №1</strong>
+            </div>
+            <div class="tabs-item" id="tab-2">
+                <strong>Текст вкладки №2</strong>
+            </div>
+            <div class="tabs-item" id="tab-3">
+                <strong>Текст вкладки №3</strong>
+            </div>
+        </div>
+    </div>
+
+    <div class="filter-garland">
+        <div class="container">
+            <div class="filter-garland__body">
+                <div class="filter-garland__slider">
+                    <div class="filter-garland__title filter-garland__title--slider">Не забудьте красиво упаковать подарок <a
+                            class="btn-view-all"
+                            href="">Смотреть все</a></div>
+                    <div class="swiper swiper-garland">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="./img/delete-2.png" width="270" height="433" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./img/delete-2.png" width="270" height="433" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./img/delete-2.png" width="270" height="433" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./img/delete-2.png" width="270" height="433" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./img/delete-2.png" width="270" height="433" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./img/delete-2.png" width="270" height="433" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./img/delete-2.png" width="270" height="433" alt="">
+                            </div>
+                        </div>
+                        <!-- If we need pagination -->
+                        <div class="swiper-pagination"></div>
+                    </div>
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-garland-button-prev"></div>
+                    <div class="swiper-garland-button-next"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="decorations-elka">
+        <div class="container">
+            <div class="decorations-elka__title">Все подарки в одном месте <a class="btn-view-all"
+                                                                                       href="https://galamart.ru/collections/vse-ukrasheniya-dlya-prazdnichnoy-elki/"
+                                                                                       target="_blank">Смотреть все</a>
+            </div>
+            <div class="decorations-elka__body">
+                <img class="img-fluid" src="./img/delete-1.png" width="1350" alt="">
+            </div>
+            <div class="action-banners">
+                <div class="swiper swiper-action">
+                    <div class="swiper-wrapper">
+                        <a href="#" target="_blank" class="swiper-slide">
+                            <img src="./img/sale_banner1.jpg" width="430" height="140" alt="">
+                        </a>
+                        <a href="#" target="_blank" class="swiper-slide">
+                            <img src="./img/sale_banner2.jpg" width="430" height="140" alt="">
+                        </a>
+                        <a href="#" target="_blank" class="swiper-slide">
+                            <img src="./img/sale_banner1.jpg" width="430" height="140" alt="">
+                        </a>
+                        <a href="#" target="_blank" class="swiper-slide">
+                            <img src="./img/sale_banner2.jpg" width="430" height="140" alt="">
+                        </a>
+                    </div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="slider-collection">
+        <div class="container">
+            <div class="slider-collection__title">Выбрать, кому подарить <a class="btn-view-all"
+                                                                               href="https://galamart.ru/collections/vse-novogodnie-kollektsii-2022/"
+                                                                               target="_blank">Смотреть все</a></div>
+            <div class="slider-collection__body">
+                <div class="swiper swiper-collection">
+                    <div class="swiper-wrapper">
+                        <a href="https://galamart.ru/collections/interesnye-podarki-dlya-detey-na-novyy-2022-god-v-galamart/"
+                           target="_blank" class="swiper-slide">
+                            <div class="slider-collection__img">
+                                <img src="./img/vyberite-podarki-newyear2022/whogift1.jpg" width="315" height="240"
+                                     alt="">
+                            </div>
+                            <div class="slider-collection__txt">
+                                <p>Детям</p>
+                            </div>
+                        </a>
+                        <a href="https://galamart.ru/collections/krasivye-podarki-dlya-zhenshchin-na-novyy-2022-god-v-galamart/"
+                           target="_blank" class="swiper-slide">
+                            <div class="slider-collection__img">
+                                <img src="./img/vyberite-podarki-newyear2022/whogift2.jpg" width="315" height="240"
+                                     alt="">
+                            </div>
+                            <div class="slider-collection__txt">
+                                <p>Для неё</p>
+                            </div>
+                        </a>
+                        <a href="https://galamart.ru/collections/silnye-podarki-dlya-muzhchin-na-novyy-2022-god-v-galamart/"
+                           target="_blank" class="swiper-slide">
+                            <div class="slider-collection__img">
+                                <img src="./img/vyberite-podarki-newyear2022/whogift3.jpg" width="315" height="240"
+                                     alt="">
+                            </div>
+                            <div class="slider-collection__txt">
+                                <p>Для него</p>
+                            </div>
+                        </a>
+                        <a href="https://galamart.ru/collections/originalnye-podarki-kollegam-na-novyy-2022-god-v-galamart/"
+                           target="_blank" class="swiper-slide">
+                            <div class="slider-collection__img">
+                                <img src="./img/vyberite-podarki-newyear2022/whogift4.jpg" width="315" height="240"
+                                     alt="">
+                            </div>
+                            <div class="slider-collection__txt">
+                                <p>Друзьям и коллегам</p>
+                            </div>
+                        </a>
+                        <a href="https://galamart.ru/collections/podarki-s-lyubovyu-rodnym-na-novyy-2022-god-v-galamart/"
+                           target="_blank" class="swiper-slide">
+                            <div class="slider-collection__img">
+                                <img src="./img/vyberite-podarki-newyear2022/whogift5.jpg" width="315" height="240"
+                                     alt="">
+                            </div>
+                            <div class="slider-collection__txt">
+                                <p>Родителям</p>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+                </div>
+                <!-- If we need navigation buttons -->
+                <div class="swiper-collection-button-prev"></div>
+                <div class="swiper-collection-button-next"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-nav">
+        <div class="container">
+            <div class="footer-nav__body">
+                <div class="footer-nav__prev">
+                    <div class="footer-nav__img">
+                        <img src="./img/step1_bottom.png" width="140" height="150" alt="">
+                    </div>
+                    <a class="footer-nav__name" href="#">Нарядить ёлку <span>01</span></a>
+                </div>
+                <div class="footer-nav__next">
+                    <a class="footer-nav__name" href="#">Накрыть на стол <span>03</span></a>
+                    <div class="footer-nav__img">
+                        <img src="./img/step3_bottom.png" width="140" height="150" alt="">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+<!-- JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="js/galamart-ng-2022.js"></script>
+</body>
+
+</html>
