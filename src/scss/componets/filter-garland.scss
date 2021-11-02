@@ -20,9 +20,7 @@
 			transform: translate(0, -50%);
 		}
 	}
-	&__body{
 
-	}
 	&__slider{
 		background-color: #fff;
 		border-radius: 20px;
@@ -77,5 +75,20 @@
 		background-color: #FD7400;
 		width: 10px;
 		height: 10px;
+	}
+
+	@include r(767){
+		&__title {
+			font-size: 24px;
+			line-height: 31px;
+			a {
+				display: none;
+			}
+		}
+		&__slider{
+
+			padding: 20px;
+
+		}
 	}
 }

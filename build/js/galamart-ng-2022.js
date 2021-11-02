@@ -1,7 +1,10 @@
 
 
 $(function () {
-
+    $('.js-best-gift-more').on('click', function (){
+        $(this).addClass('d-none');
+        $('.best-gift__body').removeClass('d-none');
+    })
 })
 
 const swiperCollection = new Swiper('.swiper-collection', {
@@ -83,3 +86,5 @@ const swiperVideo = new Swiper('.swiper-video', {
         }
     }
 });
+
+
