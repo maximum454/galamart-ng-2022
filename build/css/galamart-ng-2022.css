@@ -1022,6 +1022,15 @@ p {
     padding: 20px;
   }
 
+  .slider-collection__title {
+    font-size: 24px;
+    line-height: 31px;
+  }
+
+  .slider-collection__title a {
+    display: none;
+  }
+
   .best-gift__title {
     font-size: 24px;
     line-height: 31px;
