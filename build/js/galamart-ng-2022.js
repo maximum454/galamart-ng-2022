@@ -24,6 +24,22 @@ const swiperCollection = new Swiper('.swiper-collection', {
     }
 });
 
+const swiperAction = new Swiper('.swiper-action', {
+    slidesPerView: 3,
+    spaceBetween: 30,
+    pagination: {
+        el: '.swiper-pagination',
+    },
+    breakpoints: {
+        320: {
+            slidesPerView: 1,
+        },
+        768: {
+            slidesPerView: 3,
+        }
+    }
+});
+
 const swiperVideo = new Swiper('.swiper-video', {
     loop: true,
     slidesPerView: 1,

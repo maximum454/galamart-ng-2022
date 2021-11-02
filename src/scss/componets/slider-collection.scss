@@ -15,7 +15,18 @@
 		color: #FFFFFF;
 		position: relative;
 		margin-bottom: 15px;
-
+		&:before{
+			content: '';
+			position: absolute;
+			top: -115px;
+			left: 40%;
+			transform: translate(-50%,0);
+			background-image: url("../img/naryadite-yelku-newyear2022/bottom_block_back_element.svg");
+			background-repeat: no-repeat;
+			background-size: 100%;
+			width: 40px;
+			height: 87px;
+		}
 		a {
 			position: absolute;
 			right: 0;
