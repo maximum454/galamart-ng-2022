@@ -4,21 +4,15 @@
         margin: 20px 0;
         padding: 0;
         list-style: none;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(200px,330px));
+        grid-gap: 10px;
+        justify-content: space-between;
         li {
-            font-style: normal;
-            font-weight: normal;
-            font-size: 17px;
-            line-height: 24px;
-            color: #324c9a;
-            padding: 5px 12px;
-            cursor: pointer;
             transition: all 0.3s ease;
-            margin: 0 10px;
-            flex-shrink: 0;
             text-align: center;
+            display: flex;
+            flex-direction: column;
             &.active {
                 .tabs__name{
                     font-size: 38px;
@@ -144,54 +138,67 @@
         }
     }
 
-    @include r(1023) {
+    @include r(1360){
         &__caption {
-            overflow-x: scroll;
-            /* width */
-            &::-webkit-scrollbar {
-                width: 1px;
-                height: 1px;
-            }
-
-            /* Track */
-            &::-webkit-scrollbar-track {
-                background: rgba(136, 142, 148, 0.4);
-            }
-
-            /* Handle */
-            &::-webkit-scrollbar-thumb {
-                background: rgba(136, 142, 148, 0.4);
-            }
-
-            /* Handle on hover */
-            &::-webkit-scrollbar-thumb:hover {
-                background: #555;
-            }
-        }
-        &__content {
-            &.active{
-                overflow-x: scroll;
-                &::-webkit-scrollbar {
-                    width: 5px;
-                    height: 5px;
-                }
-    
-                /* Track */
-                &::-webkit-scrollbar-track {
-                    background: #f1f1f1;
-                }
-    
-                /* Handle */
-                &::-webkit-scrollbar-thumb {
-                    background: #888;
-                }
-    
-                /* Handle on hover */
-                &::-webkit-scrollbar-thumb:hover {
-                    background: #555;
-                }
-            }
-            
+            grid-template-columns: repeat(auto-fit,minmax(130px,230px));
         }
     }
+    @include r(1023) {
+
+    }
+    @include r(767){
+        &__caption {
+            grid-template-columns: 1fr 1fr;
+            li {
+                justify-content: flex-end;
+                &.active {
+                    .tabs__name{
+                        font-size: 18px;
+                        line-height: 22px;
+                        opacity: 1;
+                        span{
+                            font-size: 20px;
+                            line-height: 26px;
+                            top: -20px;
+                        }
+                    }
+                    .tabs__arrow-prev{
+                        display: none;
+                    }
+                    .tabs__arrow-next{
+                        display: none;
+                    }
+                }
+                &:hover {
+                    transition: all 0.3s ease;
+                    opacity: 0.7;
+                }
+                a{
+                    text-decoration: none;
+                }
+            }
+        }
+        &__item{
+            order: 2;
+        }
+        &__icon{
+            order: 1;
+        }
+        &__name{
+            font-size: 18px;
+            line-height: 22px;
+            span{
+                font-size: 20px;
+                line-height: 26px;
+            }
+        }
+        &__title {
+            font-size: 24px;
+            line-height: 31px;
+            a {
+                display: none;
+            }
+        }
+    }
+
 }

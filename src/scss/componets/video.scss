@@ -57,4 +57,14 @@
 		bottom: 0;
 		display: none;
 	}
+	@include r(767){
+		&__title {
+			font-size: 24px;
+			line-height: 31px;
+
+			a {
+				display: none;
+			}
+		}
+	}
 }
