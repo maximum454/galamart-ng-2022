@@ -5,8 +5,9 @@
         padding: 0;
         list-style: none;
         display: grid;
-        grid-template-columns: repeat(auto-fit,minmax(200px,330px));
+        grid-template-columns: repeat(auto-fit,minmax(200px,310px));
         grid-gap: 10px;
+        align-items: center;
         justify-content: space-between;
         li {
             transition: all 0.3s ease;
@@ -144,11 +145,34 @@
         }
     }
     @include r(1023) {
-
+        &__caption {
+            align-items: flex-start;
+            li {
+                &.active {
+                    .tabs__name{
+                        font-size: 24px;
+                        line-height: 29px;
+                        opacity: 1;
+                        span{
+                            top: -20px;
+                            font-size: 30px;
+                            line-height: 39px;
+                        }
+                    }
+                    .tabs__arrow-prev{
+                        display: none;
+                    }
+                    .tabs__arrow-next{
+                        display: none;
+                    }
+                }
+            }
+        }
     }
     @include r(767){
         &__caption {
             grid-template-columns: 1fr 1fr;
+            align-items: flex-end;
             li {
                 justify-content: flex-end;
                 &.active {
@@ -183,6 +207,7 @@
         }
         &__icon{
             order: 1;
+            margin-bottom: 20px;
         }
         &__name{
             font-size: 18px;
