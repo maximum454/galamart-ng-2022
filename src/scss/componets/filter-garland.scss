@@ -57,8 +57,11 @@
 		width: 100%;
 	}
 	&__param-row{
-		display: flex;
+		display: grid;
+		grid-template-columns: repeat(auto-fit,minmax(180px,200px));
+		grid-gap: 20px;
 		flex-wrap: wrap;
+
 		justify-content: space-between;
 	}
 	&__param-column{
@@ -71,6 +74,20 @@
 		line-height: 28px;
 		color: #333333;
 		margin-bottom: 5px;
+	}
+	&__param-color{
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		div{
+			border-radius: 50%;
+			overflow: hidden;
+			width: 30px;
+			height: 30px;
+			margin-right: 10px;
+			margin-bottom: 5px;
+			background-color: #EEEEEE;
+		}
 	}
 	&__btn{
 		display: block;

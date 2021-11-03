@@ -824,9 +824,9 @@ p {
 }
 
 .filter-garland__param-row {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 200px));
+  grid-gap: 20px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -webkit-box-pack: justify;
@@ -847,6 +847,27 @@ p {
   line-height: 28px;
   color: #333333;
   margin-bottom: 5px;
+}
+
+.filter-garland__param-color {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.filter-garland__param-color div {
+  border-radius: 50%;
+  overflow: hidden;
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+  margin-bottom: 5px;
+  background-color: #EEEEEE;
 }
 
 .filter-garland__btn {
