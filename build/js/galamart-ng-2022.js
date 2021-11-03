@@ -6,9 +6,11 @@ $(function () {
         $(this).addClass('d-none');
         $('.best-gift__body').removeClass('d-none');
     })
+
+    $('.wrp').parent('.container').css({'max-width':'100%', 'padding':'0'});
 })
 
-const swiperCollection = new Swiper('.swiper-collection', {
+const swiperCollection2022 = new Swiper('.swiper-collection-2022', {
     slidesPerView: 1,
     spaceBetween: 20,
     pagination: {
