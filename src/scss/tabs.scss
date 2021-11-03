@@ -69,6 +69,51 @@
                 z-index: -1;
             }
         }
+        &.nakroyte-prazdnichnyy-stol{
+            &:after{
+                content: '';
+                position: absolute;
+                top: -50px;
+                left: -300px;
+                background-image: url("../img/nakroyte-prazdnichnyy-stol-newyear2022/block1_back_element.png");
+                background-size: 100%;
+                background-repeat: no-repeat;
+                width: 330px;
+                height: 539px;
+                pointer-events: none;
+                z-index: -1;
+            }
+        }
+        &.ukraste-dom{
+            &:after{
+                content: '';
+                position: absolute;
+                top: -50px;
+                left: -300px;
+                background-image: url("../img/ukraste-dom-newyear2022/block1_back_element.png");
+                background-size: 100%;
+                background-repeat: no-repeat;
+                width: 375px;
+                height: 461px;
+                pointer-events: none;
+                z-index: -1;
+            }
+        }
+        &.vyberite-podarki{
+            &:after{
+                content: '';
+                position: absolute;
+                top: -50px;
+                left: -300px;
+                background-image: url("../img/vyberite-podarki-newyear2022/block1_back_element.png");
+                background-size: 100%;
+                background-repeat: no-repeat;
+                width: 368px;
+                height: 534px;
+                pointer-events: none;
+                z-index: -1;
+            }
+        }
     }
 
     &__title {

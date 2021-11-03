@@ -110,6 +110,48 @@
   z-index: -1;
 }
 
+.tabs__content.nakroyte-prazdnichnyy-stol:after {
+  content: '';
+  position: absolute;
+  top: -50px;
+  left: -300px;
+  background-image: url("../img/nakroyte-prazdnichnyy-stol-newyear2022/block1_back_element.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  width: 330px;
+  height: 539px;
+  pointer-events: none;
+  z-index: -1;
+}
+
+.tabs__content.ukraste-dom:after {
+  content: '';
+  position: absolute;
+  top: -50px;
+  left: -300px;
+  background-image: url("../img/ukraste-dom-newyear2022/block1_back_element.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  width: 375px;
+  height: 461px;
+  pointer-events: none;
+  z-index: -1;
+}
+
+.tabs__content.vyberite-podarki:after {
+  content: '';
+  position: absolute;
+  top: -50px;
+  left: -300px;
+  background-image: url("../img/vyberite-podarki-newyear2022/block1_back_element.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  width: 368px;
+  height: 534px;
+  pointer-events: none;
+  z-index: -1;
+}
+
 .tabs__title {
   font-family: PT Sans;
   font-style: normal;
@@ -1359,6 +1401,21 @@ p {
   -webkit-transform: translate(0, -50%);
       -ms-transform: translate(0, -50%);
           transform: translate(0, -50%);
+}
+
+.best-gift__title.vyberite-podarki:before {
+  content: '';
+  position: absolute;
+  top: -115px;
+  left: 0;
+  -webkit-transform: translate(-50%, 0);
+      -ms-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  background-image: url("../img/vyberite-podarki-newyear2022/block2_top_element.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 95px;
+  height: 107px;
 }
 
 .best-gift__body {
