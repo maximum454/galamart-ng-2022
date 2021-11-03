@@ -44,6 +44,20 @@
 		grid-template-columns: 1fr 1fr;
 		justify-content: space-between;
 		margin: 0 0 30px;
+		position: relative;
+		&:after{
+			content: '';
+			position: absolute;
+			top: 0;
+			right: -300px;
+			background-image: url("../img/naryadite-yelku-newyear2022/block2_back_element.svg");
+			background-repeat: no-repeat;
+			background-size: 100%;
+			width: 319px;
+			height: 267px;
+			z-index: -1;
+			pointer-events: none;
+		}
 	}
 	&__img{
 		img{

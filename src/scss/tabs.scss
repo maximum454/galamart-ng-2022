@@ -54,6 +54,21 @@
         &.active {
             display: block;
         }
+        &.naryadite-yelku{
+            &:after{
+                content: '';
+                position: absolute;
+                top: -50px;
+                left: -300px;
+                background-image: url("../img/naryadite-yelku-newyear2022/block1_back_element.png");
+                background-size: 100%;
+                background-repeat: no-repeat;
+                width: 518px;
+                height: 733px;
+                pointer-events: none;
+                z-index: -1;
+            }
+        }
     }
 
     &__title {

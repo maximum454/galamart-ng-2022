@@ -96,6 +96,20 @@
   display: block;
 }
 
+.tabs__content.naryadite-yelku:after {
+  content: '';
+  position: absolute;
+  top: -50px;
+  left: -300px;
+  background-image: url("../img/naryadite-yelku-newyear2022/block1_back_element.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  width: 518px;
+  height: 733px;
+  pointer-events: none;
+  z-index: -1;
+}
+
 .tabs__title {
   font-family: PT Sans;
   font-style: normal;
@@ -810,6 +824,21 @@ p {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin: 0 0 30px;
+  position: relative;
+}
+
+.filter-garland__filter:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: -300px;
+  background-image: url("../img/naryadite-yelku-newyear2022/block2_back_element.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 319px;
+  height: 267px;
+  z-index: -1;
+  pointer-events: none;
 }
 
 .filter-garland__img img {
