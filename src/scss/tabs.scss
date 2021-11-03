@@ -131,9 +131,6 @@
         display: block;
         text-decoration: none;
         opacity: 0.7;
-        &.icon1{
-            background-image: url("./img/step1_bottom.png");
-        }
         &.active{
             opacity: 1;
         }

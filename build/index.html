@@ -54,53 +54,53 @@
 
     <div class="tabs">
         <div class="container">
-        <ul class="tabs__caption">
-            <li class="active">
-                <div class="tabs__item">
-                    <div class="tabs__name" href="tab-1">Нарядить ёлку <span>01</span></div>
-                    <a class="tabs__arrow-next" href="./vyberite-podarki.html"></a>
-                </div>
-                <div class="tabs__icon">
-                    <img  class="img-fluid" src="./img/step1_active.png" alt="">
-                </div>
-            </li>
-            <li>
-                <div class="tabs__item">
-                    <a class="tabs__name" href="./vyberite-podarki.html">Выбрать подарки <span>02</span></a>
-                </div>
-                <a href="./vyberite-podarki.html" class="tabs__icon icon1">
-                    <img class="img-fluid" src="./img/step2_inactive.png" alt="">
-                </a>
-            </li>
-            <li>
-                <div class="tabs__item">
+            <ul class="tabs__caption">
+                <li class="active">
+                    <div class="tabs__item">
+                        <div class="tabs__name" href="tab-1">Нарядить ёлку <span>01</span></div>
+                        <a class="tabs__arrow-next" href="./vyberite-podarki.html"></a>
+                    </div>
+                    <div class="tabs__icon">
+                        <img class="img-fluid" src="./img/step1_active.png" alt="">
+                    </div>
+                </li>
+                <li>
+                    <div class="tabs__item">
+                        <a class="tabs__name" href="./vyberite-podarki.html">Выбрать подарки <span>02</span></a>
+                    </div>
+                    <a href="./vyberite-podarki.html" class="tabs__icon icon1">
+                        <img class="img-fluid" src="./img/step2_inactive.png" alt="">
+                    </a>
+                </li>
+                <li>
+                    <div class="tabs__item">
 
-                    <a class="tabs__name" href="tab-3">Накрыть на стол <span>03</span></a>
+                        <a class="tabs__name" href="tab-3">Накрыть на стол <span>03</span></a>
 
-                </div>
-                <div class="tabs__icon icon1">
-                    <img class="img-fluid" src="./img/step3_inactive.png" alt="">
-                </div>
-            </li>
-            <li>
-                <div class="tabs__item">
-                    <a class="tabs__arrow-prev" href="#prev"></a>
-                    <a class="tabs__name" href="tab-4">Украсить дом <span>04</span></a>
-                    <a class="tabs__arrow-next" href="#next"></a>
-                </div>
-                <div class="tabs__icon icon1">
-                    <img class="img-fluid" src="./img/step4_inactive.png" alt="">
-                </div>
-            </li>
-        </ul>
-        <!-- Контент -->
-        <div class="tabs__content active">
-            <div class="tabs__title">Выберите красивую ель <a class="btn-view-all"
-                                                              href="https://galamart.ru/collections/novogodnie-yelki/"
-                                                              target="_blank">Смотреть все</a></div>
-            <img class="img-fluid" src="./img/delete-5.png" width="986" height="38" alt="">
-            <img class="img-fluid" src="./img/delete-4.png" width="1350" height="865" alt="">
-        </div>
+                    </div>
+                    <div class="tabs__icon icon1">
+                        <img class="img-fluid" src="./img/step3_inactive.png" alt="">
+                    </div>
+                </li>
+                <li>
+                    <div class="tabs__item">
+                        <a class="tabs__arrow-prev" href="#prev"></a>
+                        <a class="tabs__name" href="tab-4">Украсить дом <span>04</span></a>
+                        <a class="tabs__arrow-next" href="#next"></a>
+                    </div>
+                    <div class="tabs__icon icon1">
+                        <img class="img-fluid" src="./img/step4_inactive.png" alt="">
+                    </div>
+                </li>
+            </ul>
+            <!-- Контент -->
+            <div class="tabs__content active">
+                <div class="tabs__title">Выберите красивую ель <a class="btn-view-all"
+                                                                  href="https://galamart.ru/collections/novogodnie-yelki/"
+                                                                  target="_blank">Смотреть все</a></div>
+                <img class="img-fluid" src="./img/delete-5.png" width="986" height="38" alt="">
+                <img class="img-fluid" src="./img/delete-4.png" width="1350" height="865" alt="">
+            </div>
         </div>
     </div>
 
@@ -108,14 +108,123 @@
         <div class="container">
             <div class="filter-garland__body">
                 <div class="filter-garland__title">Правильно подберите гирлянду для ёлки</div>
-                <div class="d-flex">
+                <div class="filter-garland__filter">
                     <div class="filter-garland__img">
                         <img src="./img/naryadite-yelku-newyear2022/block2_configurator.svg" width="660" height="520"
                              alt="">
                     </div>
                     <div class="filter-garland__param">
                         <!--TODO: Сверстать фильр-->
-                        <img src="./img/delete-3.png" width="660" height="520" alt="">
+                        <div class="filter-garland__param-row">
+                            <div>
+                                <div class="form-group">
+                                    <div class="filter-garland__param-name">Длина гирлянды</div>
+                                    <div class="form_radio">
+                                        <input id="radio-1" type="radio" name="radio" value="1" checked>
+                                        <label for="radio-1">до 5 м</label>
+                                    </div>
+
+                                    <div class="form_radio">
+                                        <input id="radio-2" type="radio" name="radio" value="2">
+                                        <label for="radio-2">от 5 до 9 м</label>
+                                    </div>
+
+                                    <div class="form_radio">
+                                        <input id="radio-3" type="radio" name="radio" value="3">
+                                        <label for="radio-3">от 9 м</label>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="filter-garland__param-name">Тип свечения</div>
+                                    <label class="checkbox-other">
+                                        <input type="checkbox" checked>
+                                        <span>Постоянное свечение</span>
+                                    </label>
+
+                                    <label class="checkbox-other">
+                                        <input type="checkbox">
+                                        <span>Перелив</span>
+                                    </label>
+                                    <label class="checkbox-other">
+                                        <input type="checkbox">
+                                        <span>Мерцание</span>
+                                    </label>
+                                    <label class="checkbox-other">
+                                        <input type="checkbox">
+                                        <span>8 режимов</span>
+                                    </label>
+                                </div>
+                                <div class="form-group">
+                                    <div class="filter-garland__param-name">Цвет свечения</div>
+                                    <div>
+                                        color
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div>
+                                <div class="form-group">
+                                    <div class="filter-garland__param-name">Цвет провода</div>
+                                    <div class="filter-garland__param-column">
+                                        <label class="checkbox-other">
+                                            <input type="checkbox" checked>
+                                            <span>Черный</span>
+                                        </label>
+                                        <label class="checkbox-other">
+                                            <input type="checkbox">
+                                            <span>Прозрачный</span>
+                                        </label>
+                                        <label class="checkbox-other">
+                                            <input type="checkbox">
+                                            <span>Зелёный</span>
+                                        </label>
+
+                                        <label class="checkbox-other">
+                                            <input type="checkbox">
+                                            <span>Белый</span>
+                                        </label>
+                                        <label class="checkbox-other">
+                                            <input type="checkbox">
+                                            <span>Серебряный</span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="filter-garland__param-name">Вид гирлянды</div>
+                                    <div  class="filter-garland__param-column">
+                                        <label class="checkbox-other">
+                                            <input type="checkbox" checked>
+                                            <span>Нить</span>
+                                        </label>
+                                        <label class="checkbox-other">
+                                            <input type="checkbox">
+                                            <span>Сетка</span>
+                                        </label>
+
+                                        <label class="checkbox-other">
+                                            <input type="checkbox">
+                                            <span>Занавес</span>
+                                        </label>
+                                        <label class="checkbox-other">
+                                            <input type="checkbox">
+                                            <span>Бахрома</span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="filter-garland__param-name">Насадка</div>
+                                    <label class="checkbox-other">
+                                        <input type="checkbox" checked>
+                                        <span>Без насадок</span>
+                                    </label>
+                                    <label class="checkbox-other">
+                                        <input type="checkbox">
+                                        <span>С насадками</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="filter-garland__btn">Подобрать гирлянду</button>
                     </div>
                 </div>
                 <div class="filter-garland__slider">

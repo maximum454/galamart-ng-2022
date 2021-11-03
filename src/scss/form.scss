@@ -158,3 +158,118 @@
     }
 }
 
+
+.form_radio {
+    margin-bottom: 10px;
+}
+
+.form_radio input[type=radio] {
+    display: none;
+}
+.form_radio label {
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+    padding-left: 25px;
+    margin-right: 0;
+    line-height: 18px;
+    user-select: none;
+}
+.form_radio label:before {
+    content: "";
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    position: absolute;
+    left: 0;
+    bottom: 1px;
+    background: url(../img/radiobutton-inactive.png) 0 0 no-repeat;
+}
+
+/* Checked */
+.form_radio input[type=radio]:checked + label:before {
+    background: url(../img/radiobutton-active.png) 0 0 no-repeat;
+}
+
+/* Hover */
+.form_radio label:hover:before {
+    filter: brightness(120%);
+}
+
+/* Disabled */
+.form_radio input[type=radio]:disabled + label:before {
+    filter: grayscale(100%);
+}
+
+.checkbox-other {
+    display: block;
+    margin: 0 0 10px 0;
+    cursor: pointer;
+    user-select: none;
+    position: relative;
+}
+.checkbox-other input[type=checkbox] {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+    display: block;
+    width: 0;
+    height: 0;
+}
+.checkbox-other span {
+    display: inline-block;
+    position: relative;
+    padding: 0 0 0 25px;
+    line-height: 18px;
+}
+.checkbox-other span:before {
+    content: "";
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    position: absolute;
+    left: 0;
+    top: 5px;
+    transition: background-color 0.3s ease;
+    background-color: #EEEEEE;
+    border-radius: 2px;
+}
+
+/* Checked */
+.checkbox-other input[type=checkbox]:checked + span:before {
+    background-color: #FD7400;
+    background-image: url(../img/chekbox-active.svg);
+    background-size: 11px 9px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Focus */
+.focused span:before {
+    box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
+}
+
+/* Hover */
+.checkbox-other span:hover:before {
+    background-image: url(../img/chekbox-active.svg);
+    background-size: 11px 9px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #FD7400;
+}
+
+/* Active */
+.checkbox-other span:active:before {
+    filter: brightness(80%);
+}
+
+/* Disabled */
+.checkbox-other input[type=checkbox]:disabled + span {
+    color: #666;
+    cursor: default;
+}
+.checkbox-other input[type=checkbox]:disabled + span:before {
+    filter: grayscale(100%);
+    opacity: 0.6;
+}
+
