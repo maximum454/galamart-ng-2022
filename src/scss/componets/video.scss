@@ -35,11 +35,19 @@
 			height: 80px;
 		}
 	}
-
+	.swiper-wrapper{
+		padding: 15px 0;
+	}
 	.swiper-slide {
 		background-color: #fff;
 		padding: 10px;
 		text-decoration: none;
+		&:nth-child(odd){
+			transform: rotate(1deg);
+		}
+		&:nth-child(even){
+			transform: rotate(-1deg);
+		}
 		img {
 			max-width: 100%;
 			height: auto;
