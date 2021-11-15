@@ -35,6 +35,9 @@
 			height: 80px;
 		}
 	}
+	&__body{
+		position: relative;
+	}
 	.swiper-wrapper{
 		padding: 15px 0;
 	}
@@ -58,6 +61,35 @@
 			line-height: 23px;
 			color: #000;
 		}
+	}
+
+	.swiper-button-prev,
+	.swiper-button-next{
+		position: absolute;
+		top: 50%;
+		transform: translate(0,-50%);
+		background-repeat: no-repeat;
+		background-size: 100%;
+		background-position: center;
+		width: 50px;
+		height: 50px;
+		cursor: pointer;
+	}
+	.swiper-button-disabled{
+		opacity: .5;
+	}
+	.swiper-button-prev{
+		left: -25px;
+		background-image: url("../img/bottom_block_arrow_left_inactive.svg");
+	}
+	.swiper-button-next{
+		right: -25px;
+		background-image: url("../img/bottom_block_arrow_right_inactive.svg");
+	}
+	.swiper-pagination {
+		position: relative;
+		bottom: 0;
+		margin: 20px auto;
 	}
 
 	.swiper-pagination {
