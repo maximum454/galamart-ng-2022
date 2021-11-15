@@ -253,6 +253,17 @@
                 }
             }
         }
+        &__content {
+            display: none;
+            background-color: #fff;
+            border-radius: 20px;
+            padding: 20px;
+            position: relative;
+            margin-bottom: 30px;
+            &.active {
+                display: block;
+            }
+        }
         &__item{
             order: 2;
         }

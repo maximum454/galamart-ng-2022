@@ -580,12 +580,7 @@
 }
 
 body {
-  background-color: #fff;
-  font-family: 'PT Sans', sans-serif;
-  background-image: url("../img/background_repeat.jpg");
-  background-position: top center;
-  background-repeat: repeat;
-  background-size: contain;
+  background-color: #fff !important;
 }
 
 body.lock {
@@ -620,7 +615,14 @@ body.lock {
 }
 
 .main {
+  background-color: #fff;
+  font-family: 'PT Sans', sans-serif;
+  background-image: url(../img/background_repeat.jpg);
+  background-position: top center;
+  background-repeat: repeat;
+  background-size: contain;
   overflow: hidden;
+  margin-top: 10px;
 }
 
 .wrp {
@@ -727,6 +729,7 @@ p {
   position: relative;
   padding: 20px 0;
   margin-bottom: 60px;
+  z-index: 1;
 }
 
 .header-banner:before {
@@ -1677,6 +1680,19 @@ p {
 
   .tabs__caption li a {
     text-decoration: none;
+  }
+
+  .tabs__content {
+    display: none;
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 20px;
+    position: relative;
+    margin-bottom: 30px;
+  }
+
+  .tabs__content.active {
+    display: block;
   }
 
   .tabs__item {

@@ -7,7 +7,7 @@ $(function () {
         $('.best-gift__body').removeClass('d-none');
     })
 
-    //$('.wrp').parent('.container').css({'max-width':'100%', 'padding':'0'});
+    $('.wrp').parent('.container').css({'max-width':'100%', 'padding':'0'});
 
     $('a[href^="#"]').on('click', function(event) {
         // отменяем стандартное действие
